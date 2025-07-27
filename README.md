@@ -1,6 +1,6 @@
 # mBank to HomeBank CSV Converter
 
-Tento nástroj převádí výpisy z mBank (CSV) do formátu, který lze přímo importovat do [HomeBank](https://www.gethomebank.org).
+Tento nástroj převádí výpisy z mBank CZ (CSV) do formátu, který lze přímo importovat do [HomeBank](https://www.gethomebank.org).
 
 ---
 
@@ -10,8 +10,6 @@ Tento nástroj převádí výpisy z mBank (CSV) do formátu, který lze přímo 
 - Normalizuje formát podle požadavků HomeBank
 - GUI: vyber vstupní soubor a cílový název výstupního souboru
 - Nepotřebuje žádné přihlašování ani API
-
----
 
 ## 🖥️ Jak spustit
 
@@ -29,8 +27,6 @@ python scr/main.py
 4.	Vyber CSV výpis z mBank (exportovaný z internetového bankovnictví)
 5.	Ulož výsledný CSV soubor – připravený pro import do HomeBank
 
-⸻
-
 ## 📂 Struktura výstupního CSV
 
 Formát odpovídá HomeBank specifikaci:
@@ -46,20 +42,14 @@ Formát odpovídá HomeBank specifikaci:
 | category | Kategorie z výpisu                   |
 | tags     | (prázdné)                            |
 
-⸻
-
 ## 🛠️ Požadavky
 
 - Python 3.7+
 - pandas
 - tkinter (součást standardní knihovny)
 
-⸻
-
 ## 🧑‍💻 Autor
 
 - [Více o autorovi](https://www.michalsara.cz)
 
 Vytvořeno s cílem zjednodušit import do HomeBank pro české uživatele mBank.
-
----
