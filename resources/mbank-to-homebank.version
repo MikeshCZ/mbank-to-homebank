@@ -18,11 +18,11 @@ VSVersionInfo(
           [
             StringStruct('CompanyName', 'MikeshTech'),
             StringStruct('FileDescription', 'mBank to HomeBank Converter'),
-            StringStruct('FileVersion', '1.0.0'),
+            StringStruct('FileVersion', '1.0.1'),
             StringStruct('InternalName', 'mbank-to-homebank'),
             StringStruct('OriginalFilename', 'mbank-to-homebank.exe'),
             StringStruct('ProductName', 'mBank to HomeBank'),
-            StringStruct('ProductVersion', '1.0.0')
+            StringStruct('ProductVersion', '1.0.1')
           ]
         )
       ]
