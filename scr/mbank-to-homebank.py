@@ -4,6 +4,8 @@ from io import StringIO
 import tkinter as tk
 from tkinter import filedialog, messagebox
 
+__version__ = "1.0.0"
+
 def extract_transactions_from_mbank_csv(filepath):
     with open(filepath, 'r', encoding='cp1250') as file:
         lines = file.readlines()
@@ -44,7 +46,27 @@ def convert_to_homebank_format(df):
 
 def main():
     root = tk.Tk()
-    root.withdraw()  # Skryje hlavní okno
+    root.withdraw()
+    
+    width = 400
+    height = 100
+    root.update_idletasks()
+    x = (root.winfo_screenwidth() // 2) - (width // 2)
+    y = (root.winfo_screenheight() // 2) - (height // 2)
+    root.geometry(f"{width}x{height}+{x}+{y}")
+
+    root.title("mBank to HomeBank CSV Converter | v"+__version__)
+    root.deiconify()
+    root.lift()
+    
+    label = tk.Label(
+        root,
+        text="Vyberte CSV výpis z mBank pro převod do formátu HomeBank.",
+        font=("Arial", 12),
+        wraplength=350,
+        justify="center"
+    )
+    label.pack(expand=True)
 
     input_path = filedialog.askopenfilename(
         title="Vyber CSV výpis z mBank",
