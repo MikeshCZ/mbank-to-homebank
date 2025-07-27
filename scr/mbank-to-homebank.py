@@ -4,7 +4,7 @@ from io import StringIO
 import tkinter as tk
 from tkinter import filedialog, messagebox
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 def extract_transactions_from_mbank_csv(filepath):
     with open(filepath, 'r', encoding='cp1250') as file:
@@ -38,7 +38,7 @@ def convert_to_homebank_format(df):
     output['payment'] = 4 # Bank transfer
     output['number'] = ''
     output['payee'] = ''
-    output['memo'] = df['description'].str.replace(r'\s+', ' ', regex=True).str.strip()
+    output['memo'] = df['description'].str.replace(r'\s+', ' ', regex=True).str.strip().str.capitalize()
     output['amount'] = df['amount']
     output['category'] = df['category'].fillna('')
     output['tags'] = ''
