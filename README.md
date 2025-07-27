@@ -1,6 +1,12 @@
+<a href="https://www.buymeacoffee.com/michalsara" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
 # mBank to HomeBank CSV Converter
 
-Tento nástroj převádí výpisy z mBank CZ (CSV) do formátu, který lze přímo importovat do [HomeBank](https://www.gethomebank.org).
+<p align="center">
+  <img src="img/icon.png" width="256" alt="Ikona aplikace">
+</p>
+
+Tento nástroj převádí výpisy z **mBank CZ** (CSV) do formátu, který lze přímo importovat do **[HomeBank](https://www.gethomebank.org)**.
 
 ---
 
@@ -48,23 +54,19 @@ Formát odpovídá HomeBank specifikaci:
 - pandas
 - tkinter (součást standardní python knihovny)
 
-## 🧑‍💻 Autor
-
-- [Více o autorovi](https://www.michalsara.cz)
-
-Vytvořeno s cílem zjednodušit import do HomeBank pro české uživatele mBank.
-
 ## 💻 Vytvoření desktopové aplikace (Windows / macOS / Linux)
 
 Chceš z tohoto skriptu udělat klasickou aplikaci, kterou si můžeš spouštět jako `.exe` nebo `.app`?
+
 Použij nástroj [PyInstaller](https://pyinstaller.org/), který z Python skriptu vytvoří samostatný spustitelný soubor.
 
 ### 🛠️ Jak vytvořit aplikaci
 
-#### Automaticky
- Pro macOS spusť script `build_scripts/build_mac.sh`
+#### Automaticky:
 
-#### Ručně
+- Pro **macOS** spusť script `build_scripts/build_mac.sh`
+
+#### Ručně:
 
 1. Otevři terminál nebo příkazový řádek
 2. Nainstaluj PyInstaller (pouze jednou):
@@ -82,7 +84,7 @@ Použij nástroj [PyInstaller](https://pyinstaller.org/), který z Python skript
    - `--onedir` = vše v jedné složce (rychlejší spuštění než onefile; u MacOS je to jedno, vše je v app bundle)
       - lze nahradit `--onefile` = vše zabalené do jednoho `.exe` nebo `.app`
    - `--windowed` = bez konzole (vhodné pro grafické aplikace)
-   - `--icon` = přidání ikony pro aplikaci
+   - `--icon` = přidání ikony pro aplikaci *(resources/icon.ico pro Win/Linux)*
 
 4. Po dokončení najdeš výsledek ve složce `dist/`:
    - Windows: `mbank_to_homebank/mbank_to_homebank.exe`
@@ -90,10 +92,10 @@ Použij nástroj [PyInstaller](https://pyinstaller.org/), který z Python skript
       - zkopíruj `resources/Info.plist` do `dist/mbank-to-homebank.app/Contents/Info.plist`
    - Linux: spustitelný binární soubor `mbank_to_homebank/mbank_to_homebank`
 
-### 📌 Poznámky
+## 🧑‍💻 Autor
 
-- Na macOS musíš buildovat aplikaci přímo **na macOS** (nelze z Windows)
-- Na Linuxu se spustitelný soubor spouští z terminálu:
-  ```bash
-  ./dist/mbank_to_homebank/mbank_to_homebank
-  ```
+- [Více o autorovi](https://www.michalsara.cz)
+
+Vytvořeno s cílem zjednodušit import do HomeBank pro české uživatele mBank.
+
+## ☕ Pokud se vám tato repository líbí, můžete **[mi koupit kafe](https://www.buymeacoffee.com/michalsara)**. Díky!
