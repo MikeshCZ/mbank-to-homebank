@@ -35,16 +35,16 @@ python scr/main.py
 
 Formát odpovídá HomeBank specifikaci:
 
-|Sloupec | Popis |
-| --- | --- |
-|date	| Datum transakce (YYYY-MM-DD) |
-|payment | Typ platby (4 = bank transfer) |
-|number	| Číslo dokladu (prázdné) |
-|payee | Příjemce / obchodník |
-|memo	| Popis operace |
-|amount	| Částka (kladná nebo záporná) |
-|category	| Kategorie z výpisu |
-|tags	| (prázdné) |
+| Sloupec  | Popis                                |
+| -------- | ------------------------------------ |
+| date     | Datum transakce (YYYY-MM-DD)         |
+| payment  | Typ platby (všude 4 = bank transfer) |
+| number   | Číslo dokladu (prázdné)              |
+| payee    | Příjemce / obchodník (prázdné)       |
+| memo     | Popis operace                        |
+| amount   | Částka (kladná nebo záporná)         |
+| category | Kategorie z výpisu                   |
+| tags     | (prázdné)                            |
 
 ⸻
 
@@ -58,7 +58,8 @@ Formát odpovídá HomeBank specifikaci:
 
 ## 🧑‍💻 Autor
 
+- [Více o autorovi](https://www.michalsara.cz)
+
 Vytvořeno s cílem zjednodušit import do HomeBank pro české uživatele mBank.
-[Více o autorovi](https://www.michalsara.cz)
 
 ---
