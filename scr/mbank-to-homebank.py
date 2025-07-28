@@ -52,7 +52,7 @@ def main():
     height = 100
     root.update_idletasks()
     x = (root.winfo_screenwidth() // 2) - (width // 2)
-    y = (root.winfo_screenheight() // 2) - (height // 2)
+    y = 50
     root.geometry(f"{width}x{height}+{x}+{y}")
 
     root.title("mBank to HomeBank CSV Converter | v"+__version__)
