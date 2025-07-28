@@ -70,7 +70,7 @@ def main():
 
     input_path = filedialog.askopenfilename(
         title="Vyber CSV výpis z mBank",
-        filetypes=[("CSV files", "*.csv")]
+        filetypes=[("CSV soubory", "*.csv")]
     )
 
     if not input_path:
@@ -87,15 +87,18 @@ def main():
     output_path = filedialog.asksaveasfilename(
         title="Ulož výstupní CSV pro HomeBank",
         defaultextension=".csv",
-        filetypes=[("CSV files", "*.csv")]
+        filetypes=[("CSV soubory", "*.csv")]
     )
 
     if not output_path:
         messagebox.showinfo("Zrušeno", "Nebyl zvolen výstupní soubor.")
         return
-
-    df_homebank.to_csv(output_path, index=False, sep=';')
-    messagebox.showinfo("Hotovo", f"Soubor byl uložen jako:\n{output_path}")
+    
+    try:
+        df_homebank.to_csv(output_path, sep=';', index=False)
+        messagebox.showinfo("Hotovo", f"Soubor byl uložen jako:\n{output_path}")
+    except Exception as e:
+        messagebox.showerror("Chyba", f"Soubor se nepodařilo uložit:\n{e}")
 
 if __name__ == "__main__":
     main()
