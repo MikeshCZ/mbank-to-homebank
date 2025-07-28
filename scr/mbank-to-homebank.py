@@ -4,7 +4,7 @@ from io import StringIO
 import tkinter as tk
 from tkinter import filedialog, messagebox
 
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 
 def extract_transactions_from_mbank_csv(filepath):
     with open(filepath, 'r', encoding='cp1250') as file:
