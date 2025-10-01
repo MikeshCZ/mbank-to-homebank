@@ -28,7 +28,7 @@ pip install -r requirements.txt
 3.	Spusť nástroj:
 
 ```bash
-python scr/mbank-to-homebank.py
+python src/mbank-to-homebank.py
 ```
 4.	Vyber CSV výpis z mBank (exportovaný z internetového bankovnictví)
 5.	Ulož výsledný CSV soubor – připravený pro import do HomeBank
