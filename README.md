@@ -78,7 +78,7 @@ Použij nástroj [PyInstaller](https://pyinstaller.org/), který z Python skript
 3. Vytvoř spustitelný soubor:
 
    ```bash
-   pyinstaller --onedir --windowed --icon=resources/icon.icns --version-file=resources/mbank-to-homebank.version scr/mbank-to-homebank.py
+   pyinstaller --onedir --windowed --icon=resources/icon.icns --version-file=resources/mbank-to-homebank.version src/mbank-to-homebank.py
    ```
 
    - `--onedir` = vše v jedné složce (rychlejší spuštění než onefile; u MacOS je to jedno, vše je v app bundle)
