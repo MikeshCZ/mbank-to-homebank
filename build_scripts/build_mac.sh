@@ -60,7 +60,7 @@ fi
 # --version-file: Include version information from a file
 # scr/mbank-to-homebank.py: The main script to build
 
-pyinstaller --noconfirm --onedir --windowed --icon=resources/icon.icns --version-file=resources/mbank-to-homebank.version scr/mbank-to-homebank.py
+pyinstaller --noconfirm --onedir --windowed --icon=resources/icon.icns --version-file=resources/mbank-to-homebank.version src/mbank-to-homebank.py
 
 # Check if the build was successful
 if [ $? -ne 0 ]; then
